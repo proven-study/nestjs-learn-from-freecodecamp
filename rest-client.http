@@ -1,0 +1,34 @@
+### Get all songs
+GET http://localhost:3000/songs
+
+### Fing song by id
+GET http://localhost:3000/songs/1
+
+### Create a new song
+POST http://localhost:3000/songs
+
+```json
+{
+  "title": "Song 1",
+  "artist": "Artist 1",
+  "album": "Album 1",
+  "genre": "Genre 1",
+  "duration": 100
+}
+```
+
+### Update a song
+PUT http://localhost:3000/songs/1
+
+```json
+{
+  "title": "Song 1",
+  "artist": "Artist 1",
+  "album": "Album 1",
+  "genre": "Genre 1",
+  "duration": 100
+}
+```
+
+### Delete a song
+DELETE http://localhost:3000/songs/1
