@@ -1,34 +1,29 @@
 ### Get all songs
-GET http://localhost:3000/songs
+GET http://localhost:3000/api/v1/songs
 
 ### Fing song by id
-GET http://localhost:3000/songs/1
+GET http://localhost:3000/api/v1/songs/1
 
 ### Create a new song
-POST http://localhost:3000/songs
+POST http://localhost:3000/api/v1/songs
+Content-Type: application/json
 
-```json
 {
   "title": "Song 1",
-  "artist": "Artist 1",
-  "album": "Album 1",
-  "genre": "Genre 1",
-  "duration": 100
+  "artists": ["Artist 1", "Artist 2"],
+  "releaseDate": "2024-05-16",
+  "duration": "03:30"
 }
-```
 
 ### Update a song
-PUT http://localhost:3000/songs/1
+PUT http://localhost:3000/api/v1/songs/1
 
-```json
 {
   "title": "Song 1",
-  "artist": "Artist 1",
-  "album": "Album 1",
-  "genre": "Genre 1",
-  "duration": 100
+  "artists": ["Artist 1", "Artist 2"],
+  "releaseDate": "2024-05-16",
+  "duration": "03:30"
 }
-```
 
 ### Delete a song
-DELETE http://localhost:3000/songs/1
+DELETE http://localhost:3000/api/v1/songs/1
